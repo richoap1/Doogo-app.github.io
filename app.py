@@ -7,10 +7,16 @@ import re
 from flask_dance.contrib.google import make_google_blueprint, google
 from flask_dance.contrib.facebook import make_facebook_blueprint, facebook
 from flask_session import Session
+from dotenv import load_dotenv
+# from flask_talisman import Talisman
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Flask app configuration
 app = Flask(__name__, static_url_path='/static', template_folder='views')
-app.secret_key = '210402'  # Set a secret key for session management
+app.secret_key = os.environ.get('SECRET_KEY', '210402') # Set a secret key for session management
+# Talisman(app)
 
 # Configure Flask-Mail
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
@@ -274,7 +280,7 @@ def google_login():
     session['name'] = name
     session['role'] = 'user'  # Default role for social login
     flash("Login successful!")
-    return redirect(url_for('index'))
+    return redirect(url_for('/'))
 
 # Facebook login route
 @app.route('/facebook_login')
