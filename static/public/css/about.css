@@ -1,0 +1,315 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Fallback color */
+    background-image: url('../images/Vector.png'); /* Path to your image */
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+/* Header */
+.bg-custom {
+    background: #7ed957; /* Updated background color for header and footer */
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+/* Tentang Kami */
+.TentangKami {
+    width: 100%; /* Full width */
+    height: auto; /* Allow height to adjust based on content */
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align children in a row */
+    justify-content: space-between; /* Space between main and aside */
+}
+
+.Section {
+    width: 100%; /* Use full width */
+    max-width: 500px; /* Limit max width for the main section */
+    height: auto; /* Allow height to adjust based on content */
+    margin-right: 20px; /* Space between section and aside */
+}
+
+/* Heading styles */
+.Heading2TentangKami {
+    font-size: 1.5rem; /* Font size for the heading */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Text color */
+    text-align: center; /* Center the heading */
+    margin-top: 100px;
+}
+
+/* Description styles */
+.Description {
+    background-color: #f5fbde; /* Light background color for contrast */
+    padding: 15px; /* Padding around the text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 15px; /* Space below the description */
+    font-size: 1rem; /* Font size */
+    color: #333; /* Text color */
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+/* More About DOOGO button styles */
+.MoreAboutDoogo {
+    text-align: center; /* Center the button */
+}
+
+.MoreAboutDoogo .btn {
+    margin-top: 10px; /* Space above the button */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1rem; /* Font size for the button */
+    border-radius: 7px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Aside styles */
+aside {
+    flex: 0 0 300px; /* Fixed width for aside */
+    max-width: 300px; /* Limit max width for the aside */
+}
+
+/* Ikon */
+.ikon img {
+    width: 50px;
+    height: 50px;
+}
+
+.ikon p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #008FD5; /* Custom footer background color */
+    color: white; /* Text color */
+    padding: 40px 0; /* Padding for the footer */
+}
+
+/* Widget Title Styles */
+.widget-title {
+    font-size: 18px; /* Font size for titles */
+    margin-bottom: 15px; /* Space below titles */
+    font-weight: bold; /* Make titles bold */
+}
+
+/* Menu List Styles */
+.menu-list {
+    padding: 0; /* Remove padding */
+}
+
+/* Menu Item Styles */
+.menu-item {
+    margin-bottom: 10px; /* Space between menu items */
+}
+
+/* Nav Link Styles */
+.nav-link {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: #ff4081; /* Change color on hover */
+}
+
+/* Social Links Styles */
+.social-links {
+    margin-top: 15px; /* Space above social links */
+}
+
+.social-links ul {
+    padding: 0; /* Remove padding */
+}
+
+.social-links li {
+    list-style: none; /* Remove bullet points */
+}
+
+/* Social Button Styles */
+.btn-outline-light {
+    border: 1px solid white; /* White border for social buttons */
+    color: white; /* Text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.btn-outline-light:hover {
+    background-color: white; /* Background color on hover */
+    color: #008FD5; /* Text color on hover */
+}
+
+/* Subscribe Section Styles */
+.footer-menu p {
+    margin: 10px 0; /* Space above and below the paragraph */
+}
+
+/* Input Field Styles */
+.form-control {
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 9px; /* Rounded corners */
+}
+
+/* Button Styles */
+.btn-dark {
+    background-color: #4a90e2; /* Button color */
+    color: white; /* Button text color */
+    border-radius: 9px; /* Rounded corners */
+}
+
+.btn-dark:hover {
+    background-color: #3a7bbf; /* Darker shade on hover */
+}
+
+/* Copyright Text Styles */
+.Copyright2023PtDoogoIndonesiaAllRightsReserved {
+    font-size: 14px; /* Font size for copyright */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the text */
+}
+
+/* Chat Popup Styles */
+.chat-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px; /* Width of the chat popup */
+    background-color: #fff; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    z-index: 1000; /* Ensure it appears above other elements */
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Header styles */
+.chat-header {
+    background-color: #4a90e2; /* Header color */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around header */
+    border-top-left-radius: 8px; /* Rounded corners */
+    border-top-right-radius: 8px; /* Rounded corners */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+/* Close button styles */
+.close-chat {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: white; /* Text color */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Chat body styles */
+.chat-body {
+    padding: 10px; /* Padding inside chat body */
+    max-height: 300px; /* Maximum height */
+    overflow-y: auto; /* Scroll if content exceeds max height */
+}
+
+/* Message styles */
+.message {
+    margin-bottom: 10px; /* Space between messages */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack message elements vertically */
+}
+
+/* Message text styles */
+.message-text {
+    padding: 10px; /* Padding inside message */
+    border-radius: 5px; /* Rounded corners */
+    max-width: 80%; /* Maximum width of message */
+}
+
+/* Assistant message styles */
+.assistant .message-text {
+    background-color: #e1f5fe; /* Light blue for assistant */
+    align-self: flex-start; /* Align to the left */
+}
+
+/* User message styles */
+.user .message-text {
+    background-color: #ffe0b2; /* Light orange for user */
+    align-self: flex-end; /* Align to the right */
+}
+
+/* Message time styles */
+.message-time {
+    font-size: 12px; /* Font size for time */
+    color: gray; /* Text color */
+    margin-top: 2px; /* Space above time */
+}
+
+/* Input area styles */
+.chat-input {
+    display: flex; /* Flexbox for layout */
+    padding: 10px; /* Padding around input area */
+    border-top: 1px solid #ccc; /* Top border */
+}
+
+/* Input field styles */
+.chat-input input {
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Send button styles */
+.send-button {
+    background-color: #4a90e2; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 5px; /* Space between input and button */
+}
+
+/* Open chat button styles */
+.open-chat {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Distance from bottom */
+    right: 20px; /* Distance from right */
+    background-color: #ff4081; /* Pink color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 50%; /* Circular shape */
+    width: 60px; /* Width */
+    height: 60px; /* Height */
+    font-size: 24px; /* Icon size */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Open chat button hover effect */
+.open-chat:hover {
+    background-color: #e91e63; /* Darker pink on hover */
+}
+
+/* Icon styles */
+.open-chat i {
+    margin: 0; /* Remove margin for icon */
+}

@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for the form pages */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+}
+
+.navbar-collapse {
+    display: flex; /* Use flexbox for the collapse */
+    justify-content: center; /* Center nav items */
+    width: 100%; /* Ensure it takes full width */
+}
+
+.navbar-nav {
+    display: flex; /* Use flexbox for the nav items */
+    justify-content: center; /* Center nav items */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px; /* Space between nav items */
+}
+
+.navbar-nav .nav-link {
+    color: #000; /* Change text color to black */
+    padding: 15px 20px; /* Padding for links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.navbar-toggler {
+    border-color: #007bff; /* Border color for the toggler */
+}
+
+.navbar-toggler-icon {
+    background-color: #007bff; /* Background color for the toggler icon */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Form Container */
+.container mt-5{
+    max-width: 400px; /* Max width for the form */
+    margin: 50px auto; /* Center the form and add top margin */
+    padding: 20px; /* Padding for the form */
+    background: #fff; /* White background for the form */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+
+/* Form Container */
+form {
+    background: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Max width for the form */
+    margin: auto; /* Center the form */
+}
+
+/* Form Headings */
+h2 {
+    color: #333; /* Dark color for headings */
+    text-align: center; /* Center the heading */
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-bottom: 5px; /* Space below labels */
+}
+
+p {
+    text-align: center;
+}
+/* Social Button Styles */
+.social-btn {
+    width: 100%;    
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-btn img {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="file"] {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #008FD5; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width for button */
+}
+
+input[type="submit"]:hover {
+    background-color: #007bb5; /* Darker shade on hover */
+}
+
+/* Error Messages */
+.error {
+    color: red; /* Red color for error messages */
+    font-size: 0.9em; /* Smaller font size for error messages */
+    margin-top: -10px; /* Space above error messages */
+    margin-bottom: 10px; /* Space below error messages */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #008FD5; /* Custom footer background color */
+    color: white; /* Text color */
+    padding: 40px 0; /* Padding for the footer */
+    margin-top: 300px;
+}
+
+/* Widget Title Styles */
+.widget-title {
+    font-size: 18px; /* Font size for titles */
+    margin-bottom: 15px; /* Space below titles */
+    font-weight: bold; /* Make titles bold */
+}
+
+/* Menu List Styles */
+.menu-list {
+    padding: 0; /* Remove padding */
+}
+
+/* Menu Item Styles */
+.menu-item {
+    margin-bottom: 10px; /* Space between menu items */
+}

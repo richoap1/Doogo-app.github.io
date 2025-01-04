@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #E7F4FC; /* Light background color */
+}
+
+/* Header Styles */
+.css-udwbrz {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 1024px;
+    background-color: #FFFFFF; /* White background */
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid #F0F3F7; /* Light border */
+    transition: transform 280ms ease;
+    height: 121px; /* Fixed height */
+}
+
+/* Header and Footer Styles */
+.bg-custom {
+    background: #7ed957; /* Updated background color for header and footer */
+    padding: 10px 0; /* Add padding for better spacing */
+}
+
+.logo {
+    width: 100px; /* Corrected width from 100x to 100px */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Container Styles */
+.container {
+    max-width: 1440px; /* Set maximum width to 1440px */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Optional: Add some padding */
+}
+
+/* Search Bar Styles */
+.search-bar {
+    width: 100%; /* Full width */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center items */
+    margin: 0 20px; /* Space around the search bar */
+}
+
+.search-bar input {
+    flex: 1; /* Take available space */
+    border-radius: 5px 0 0 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border for input */
+    padding: 24px 10px; /* Padding for input */
+}
+
+.search-bar button {
+    border-radius: 0 5px 5px 0; /* Rounded corners */
+    padding: 10px 10px; /* Padding for button */
+}
+
+/* Language Selector */
+.language-selector {
+    margin-top: 10px; /* Space above language selector */
+}
+
+/* Feature Box Styles */
+.feature {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center; /* Center text in feature boxes */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+}
+
+.navbar-collapse {
+    display: flex; /* Use flexbox for the collapse */
+    justify-content: center; /* Center nav items */
+    width: 100%; /* Ensure it takes full width */
+}
+
+.navbar-nav {
+    display: flex; /* Use flexbox for the nav items */
+    justify-content: center; /* Center nav items */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px; /* Space between nav items */
+}
+
+.navbar-nav .nav-link {
+    color: #000; /* Change text color to black */
+    padding: 15px 20px; /* Padding for links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.navbar-toggler {
+    border-color: #007bff; /* Border color for the toggler */
+}
+
+.navbar-toggler-icon {
+    background-color: #007bff; /* Background color for the toggler icon */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #008FD5; /* Footer background color */
+    color: white; /* Text color */
+    padding: 40px 0; /* Padding for the footer */
+}
+
+/* Footer Menu Styles */
+.footer-menu {
+    margin-bottom: 20px; /* Space between footer menu sections */
+}
+
+.footer-menu img {
+    width: 150px; /* Logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Widget Title Styles */
+.widget-title {
+    font-size: 18px; /* Font size for titles */
+    margin-bottom: 15px; /* Space below titles */
+    font-weight: bold; /* Make titles bold */
+}
+
+/* Menu List Styles */
+.menu-list {
+    padding: 0; /* Remove padding */
+}
+
+/* Menu Item Styles */
+.menu-item {
+    margin-bottom: 10px; /* Space between menu items */
+}
+
+/* Nav Link Styles */
+.nav-link {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: #ff4081; /* Change color on hover */
+}
+
+/* Social Links Styles */
+.social-links {
+    margin-top: 15px; /* Space above social links */
+}
+
+.social-links ul {
+    padding: 0; /* Remove padding */
+}
+
+.social-links li {
+    list-style: none; /* Remove bullet points */
+}
+
+/* Button Styles */
+.btn-outline-light {
+    border: 1px solid white; /* White border for social buttons */
+    color: white; /* Text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.btn-outline-light:hover {
+    background-color: white; /* Background color on hover */
+    color: #008FD5; /* Text color on hover */
+}
+
+/* Subscribe Section Styles */
+.footer-menu p {
+    margin: 10px 0; /* Space above and below the paragraph */
+}
+
+/* Input Field Styles */
+.form-control {
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 9px; /* Rounded corners */
+}
+
+/* Button Styles */
+.btn-dark {
+    background-color: #4a90e2; /* Button color */
+    color: white; /* Button text color */
+    border-radius: 9px; /* Rounded corners */
+    width: 80px;
+}
+
+.btn-dark:hover {
+    background-color: #3a7bbf; /* Darker shade on hover */
+}
+
+/* Copyright Text Styles */
+.Copyright2023PtDoogoIndonesiaAllRightsReserved {
+    font-size: 14px; /* Font size for copyright */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-menu {
+        text-align: center; /* Center text on smaller screens */
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column; /* Stack items on smaller screens */
+    }
+
+    .search-bar input {
+        margin-bottom: 10px; /* Space below input on small screens */
+    }
+}
+
+.nav-item {
+    display: inline-block; /* Ensure nav items are inline */
+    margin-left: 10px; /* Space between items */
+}
