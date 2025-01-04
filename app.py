@@ -15,31 +15,31 @@ load_dotenv()
 
 # Flask app configuration
 app = Flask(__name__, static_url_path='/static', template_folder='views')
-app.secret_key = os.environ.get('SECRET_KEY', '210402') # Set a secret key for session management
+app.secret_key = os.environ.get('SECRET_KEY', 'your_default_key') # Set a secret key for session management
 # Talisman(app)
 
 # Configure Flask-Mail
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME', 'doogo6243@gmail.com')  # Use environment variable for email
-app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD', 'wgrb hssy whmd xgwx')  # Use environment variable for password
+app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME', 'Your_email@gmail.com')  # Use environment variable for email
+app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD', 'Your_password')  # Use environment variable for password
 app.config['MAIL_DEFAULT_SENDER'] = app.config['MAIL_USERNAME']  # Default sender
 
 mail = Mail(app)
 
 # Google OAuth
 google_bp = make_google_blueprint(
-    client_id='44819535733-nppfepc7f3fmu19vmj610p9iqk271osu.apps.googleusercontent.com',
-    client_secret='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',
+    client_id=os.environ.get('GOOGLE_CLIENT_ID'),
+    client_secret=os.environ.get('GOOGLE_CLIENT_SECRET'),
     redirect_to='google_login'
 )
 app.register_blueprint(google_bp, url_prefix='/google_login')
 
 # Facebook OAuth
 facebook_bp = make_facebook_blueprint(
-    client_id='899953522255020',
-    client_secret='f6aa97caef24884d9054f418dbef766c',
+    client_id=os.environ.get('FACEBOOK_CLIENT_ID'),
+    client_secret=os.environ.get('FACEBOOK_CLIENT_SECRET'),
     redirect_to='facebook_login'
 )
 app.register_blueprint(facebook_bp, url_prefix='/facebook_login')
